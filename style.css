@@ -41,7 +41,7 @@ ul {
   list-style: none;
 }
 
-p, li {
+p, li, span, div {
   font-size: 1vw;
 }
 
