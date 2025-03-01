@@ -23,6 +23,9 @@ h1, h2 {
 }
 h2 {
 	padding-bottom: 0.7vw;
+	@media (max-width: 768px){
+		padding-bottom: 2vw;
+	}
 }
 h3, h4, h5, h6 {
 	font-weight: 300;
@@ -32,6 +35,9 @@ ul {
 }
 p, li, span, div {
 	font-size: 1vw;
+	@media (max-width: 768px){
+		font-size: 3vw;
+	}
 }
 a,
 a:visited {
@@ -63,6 +69,9 @@ a {
 	margin: 0 auto;
 	.separator {
 		height: 2vw;
+		@media (max-width: 768px){
+			height: 7vw;
+		}
 	}
 	.border-left {
 		border-left: 0.14vw solid #721d37;
@@ -80,9 +89,16 @@ a {
 	&__inner {
 		background-color: #721d37;
 		padding: 2.14vw;
+		@media (max-width: 768px){
+			padding: 5vw;
+		}
 		h1 {
 			font-size: 4vw;
 			line-height: 100%;
+			@media (max-width: 768px){
+				text-align: center;
+				font-size: 10vw;
+			}
 		}
 		h2 {
 			margin-top: 0.3vw;
@@ -91,11 +107,21 @@ a {
 			display: inline-block;
 			padding: 0 0 0.14vw 0;
 			border-bottom: 0.14vw solid #ffffff;
+			@media (max-width: 768px){
+				display: block;
+				text-align: center;
+				font-size: 7vw;
+				margin-top: 3vw;
+				padding-bottom: 3vw;
+			}
 		}
 	}
 	&__first-row {
 		display: flex;
 		align-items: center;
+		@media (max-width: 768px){
+			flex-direction: column;
+		}
 	}
 	&__photo {
 		min-width: 21vw;
@@ -105,6 +131,13 @@ a {
 		overflow: hidden;
 		margin-right: 4vw;
 		position: relative;
+		@media (max-width: 768px){
+			min-width: 90vw;
+			min-height: 90vw;
+			height: auto;
+			margin-right: 0;
+			margin-bottom: 5vw;
+		}
 		img {
 			position: absolute;
 			top: 0;
@@ -122,6 +155,9 @@ a {
 		font-size: 1vw;
 		letter-spacing: 0;
 		text-align: justify;
+		@media (max-width: 768px){
+			margin-top: 5vw;
+		}
 		p {
 			margin-top: 0.6vw;
 
@@ -136,30 +172,59 @@ a {
 	grid-template: 1fr / minmax(40%, auto) minmax(60%, auto);
 	color: #721d37;
 	padding: 2.14vw;
+	@media (max-width: 768px){
+		grid-template: 1fr / 1fr;
+		padding: 5vw;
+		margin-top: 0;
+		margin-bottom: 5vw;
+	}
 	h2 {
 		font-size: 3vw;
 		border-bottom: 0.14vw solid #721d37;
+		@media (max-width: 768px){
+			font-size: 7vw;
+		}
 	}
 	h3 {
 		font-size: 2vw;
+		@media (max-width: 768px){
+			font-size: 5vw;
+		}
 	}
 	h4 {
 		font-size: 1.4vw;
 		margin-top: 0.5vw;
+		@media (max-width: 768px){
+			margin-top: 3vw;
+			font-size: 4vw;
+		}
 	}
 	h5 {
 		font-size: 1.2vw;
+		@media (max-width: 768px){
+			font-size: 3vw;
+		}
 	}
 	h6 {
 		font-size: 1vw;
+		@media (max-width: 768px){
+			font-size: 3vw;
+		}
 	}
 	&__item {
 		&:not(:first-child) {
 			margin-top: 4.29vw;
+			@media (max-width: 768px){
+				margin-top: 10vw;
+			}
 		}
 	}
 	&__right {
 		margin-left: 4.29vw;
+		@media (max-width: 768px){
+			margin-left: 0;
+			margin-top: 10vw;
+		}
 	}
 	.period {
 		margin-top: 0.36vw;
@@ -174,10 +239,16 @@ a {
 	}
 	.description {
 		margin-top: 0.5vw;
+		@media (max-width: 768px){
+			margin-top: 3vw;
+		}
 		li {
 			padding-left: 1.07vw;
 			margin-top: 0.5vw;
 			position: relative;
+			@media (max-width: 768px){
+				margin-top: 3vw;
+			}
 			&::before{
 				content:'';
 				position: absolute;
@@ -193,6 +264,10 @@ a {
 }
 
 .grid-left {
+	@media (max-width: 768px){
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .social {
@@ -201,10 +276,17 @@ a {
 		align-items: center;
 		&:not(:first-child) {
 			margin-top: 1.07vw;
+			@media (max-width: 768px){
+				margin-top: 3vw;
+			}
 		}
 		img {
 			width: 2vw;
 			height: 2vw;
+			@media (max-width: 768px){
+				width: 5vw;
+				height: 5vw;
+			}
 		}
 		span {
 			display: inline-block;
@@ -228,34 +310,55 @@ a {
 		color: #ffffff;
 		margin-top: 0.71vw;
 		margin-left: 0.71vw;
+		@media (max-width: 768px){
+			padding: 1vw 1.5vw;
+			border-radius: 1.5vw;
+			margin-top: 1.5vw;
+			margin-left: 1.5vw;
+		}
 	}
 }
 .skills-block {
 	ul {
 		margin-top: 0.5vw;
+		@media (max-width: 768px){
+			margin-top: 3vw;
+		}
 		li {
 			margin-top: 0.5vw;
 			padding-left: 0.5vw;
+			@media (max-width: 768px){
+				margin-top: 3vw;
+				
+			}
 		}
 	}
 }
 .soft-skills {
-	display: none;
 }
 
 .languages {
 	.language {
 		line-height: 0;
 		margin-top: 1vw;
+		@media (max-width: 768px){
+			margin-top: 3px;
+		}
 		>span {
-			
+			@media (max-width: 768px){
+				display: inline-block;
+				margin-top: 3vw;
+				font-size: 4vw;
+			}
 		}
 		&__points {
 			margin-top: 0.6vw;
 			margin-left: -0.71vw;
 			line-height: 0;
 			display: flex;
-
+			@media (max-width: 768px){
+				margin-top: 1vw;
+			}
 			span {
 				display: inline-block;
 				width: 1.43vw;
@@ -263,6 +366,11 @@ a {
 				border: 0.07vw solid #721d37;
 				border-radius: 50%;
 				margin-left: 1vw;
+				@media (max-width: 768px){
+					width: 5vw;
+					height: 5vw;
+					margin-left: 3vw;
+				}
 			}
 		}
 	}
