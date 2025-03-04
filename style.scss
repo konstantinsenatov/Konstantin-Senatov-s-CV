@@ -338,6 +338,13 @@ a {
 }
 
 .languages {
+	&__row {
+		display: flex;
+		gap: 40px;
+		@media (max-width: 768px){
+			display: block;
+		}
+	}
 	.language {
 		line-height: 0;
 		margin-top: 1vw;
